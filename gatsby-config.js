@@ -4,7 +4,17 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `AppGambit Blog`,
+    siteTitleAlt: `AppGambit Blog`,
+    siteHeadline: `AppGambit Blog`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://blog.appgambit.com`,
+    // Used for SEO
+    siteDescription: `AWS Consulting Partner | Full-stack Web/Mobile, Serverless, Cloud Native Development and Consulting Agency.`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.png`
   },
   plugins: [
     {
@@ -16,19 +26,11 @@ module.exports = {
             title: `Blog`,
             slug: `/blog`,
           },
-          {
-            title: `About`,
-            slug: `/about`,
-          },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Linkedin`,
+            url: `https://www.linkedin.com/company/appgambit/`,
           },
         ],
       },
@@ -43,9 +45,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `AppGambit Blog`,
+        short_name: `appgambit-blog`,
+        description: `AWS Consulting Partner | Full-stack Web/Mobile, Serverless, Cloud Native Development and Consulting Agency.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
