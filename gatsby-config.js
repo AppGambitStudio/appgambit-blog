@@ -14,7 +14,7 @@ module.exports = {
     // Will be set on the <html /> tag
     siteLanguage: `en`,
     // Used for og:image and must be placed inside the `static` folder
-    siteImage: `/banner.png`
+    siteImage: `/banner.jpg`
   },
   plugins: [
     {
@@ -59,7 +59,7 @@ module.exports = {
             type: `image/png`,
           },
           {
-            src: `/android-chrome-512x512.png`,
+            src: `/android-chrome-512x512.jpg`,
             sizes: `512x512`,
             type: `image/png`,
           },
